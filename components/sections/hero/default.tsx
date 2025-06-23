@@ -1,10 +1,9 @@
-import { ArrowRightIcon } from "lucide-react";
+import { ArrowRightIcon, MailIcon } from "lucide-react";
 import { ReactNode } from "react";
 
 import { siteConfig } from "@/config/site";
 import { cn } from "@/lib/utils";
 
-import Github from "../../logos/github";
 import { Badge } from "../../ui/badge";
 import { Button, type ButtonProps } from "../../ui/button";
 import Glow from "../../ui/glow";
@@ -30,13 +29,14 @@ interface HeroProps {
 }
 
 export default function Hero({
-  title = "Give your big idea the design it deserves",
-  description = "Professionally designed blocks and templates built with React, Shadcn/ui and Tailwind that will help your product stand out.",
+  title = "Fast & Reliable Computer and Laptop Repair",
+  description =
+    "Professional diagnostics, repair and maintenance for all major brands.",
   mockup = (
     <Screenshot
       srcLight="/app-light.png"
       srcDark="/app-dark.png"
-      alt="Launch UI app screenshot"
+      alt="TechFix service screenshot"
       width={1248}
       height={765}
       className="w-full"
@@ -44,11 +44,9 @@ export default function Hero({
   ),
   badge = (
     <Badge variant="outline" className="animate-appear">
-      <span className="text-muted-foreground">
-        New version of Launch UI is out!
-      </span>
+      <span className="text-muted-foreground">Need help fast?</span>
       <a href={siteConfig.getStartedUrl} className="flex items-center gap-1">
-        Get started
+        Contact us
         <ArrowRightIcon className="size-3" />
       </a>
     </Badge>
@@ -56,14 +54,14 @@ export default function Hero({
   buttons = [
     {
       href: siteConfig.getStartedUrl,
-      text: "Get Started",
+      text: "Request Service",
       variant: "default",
     },
     {
-      href: siteConfig.links.github,
-      text: "Github",
+      href: siteConfig.links.email,
+      text: "Email Us",
       variant: "glow",
-      icon: <Github className="mr-2 size-4" />,
+      icon: <MailIcon className="mr-2 size-4" />,
     },
   ],
   className,

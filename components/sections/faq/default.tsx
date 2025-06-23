@@ -1,7 +1,4 @@
-import Link from "next/link";
 import { ReactNode } from "react";
-
-import { siteConfig } from "@/config/site";
 
 import {
   Accordion,
@@ -24,123 +21,46 @@ interface FAQProps {
 }
 
 export default function FAQ({
-  title = "Questions and Answers",
+  title = "Frequently Asked Questions",
   items = [
     {
-      question:
-        "Why building a great landing page is critical for your business?",
+      question: "How long will my repair take?",
       answer: (
-        <>
-          <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-            In today&apos;s AI-driven world, standing out is harder than ever.
-            While anyone can build a product, a professional landing page makes
-            the difference between success and failure.
-          </p>
-          <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-            Launch UI helps you ship faster without compromising on quality.
-          </p>
-        </>
-      ),
-    },
-    {
-      question: "Why use Launch UI instead of a no-code tool?",
-      answer: (
-        <>
-          <p className="text-muted-foreground mb-4 max-w-[600px]">
-            No-code tools lock you into their ecosystem with recurring fees and
-            limited control. They often come with performance issues and make it
-            difficult to integrate with your product.
-          </p>
-          <p className="text-muted-foreground mb-4 max-w-[600px]">
-            You can&apos;t even change your hosting provider and basic things
-            like web analytics come as extra costs and paid add-ons.
-          </p>
-          <p className="text-muted-foreground mb-4 max-w-[600px]">
-            What might seem like a convenient solution today could paint you
-            into a corner tomorrow, limiting your ability to scale and adapt.
-            Launch UI gives you full control of your code while maintaining
-            professional quality.
-          </p>
-        </>
-      ),
-    },
-    {
-      question:
-        "How Launch UI is different from other components libraries and templates?",
-      answer: (
-        <>
-          <p className="text-muted-foreground mb-4 max-w-[580px]">
-            Launch UI stands out with premium design quality and delightful
-            touches of custom animations and illustrations.
-          </p>
-          <p className="text-muted-foreground mb-4 max-w-[580px]">
-            All components are carefully crafted to help position your product
-            as a professional tool, avoiding the generic template look.
-          </p>
-          <p className="text-muted-foreground mb-4 max-w-[640px] text-balance">
-            Unlike many libraries that rely on outdated CSS practices and old
-            dependencies, Launch UI is built with modern technologies and best
-            practices in mind.
-          </p>
-        </>
-      ),
-    },
-    {
-      question: 'Why exactly does it mean that "The code is yours"?',
-      answer: (
-        <>
-          <p className="text-muted-foreground mb-4 max-w-[580px]">
-            The basic version of Launch UI is open-source and free forever,
-            under a do-whatever-you-want license.
-          </p>
-          <p className="text-muted-foreground mb-4 max-w-[580px]">
-            The pro version that contains more components and options is a
-            one-time purchase that gives you lifetime access to all current and
-            future content. Use it for unlimited personal and commercial
-            projects - no recurring fees or restrictions.
-          </p>
-          <p className="text-muted-foreground mb-4 max-w-[580px]">
-            For complete details about licensing and usage rights, check out{" "}
-            <Link href="/pricing" className="text-foreground underline">
-              the pricing page
-            </Link>
-            .
-          </p>
-        </>
-      ),
-    },
-    {
-      question: "Are Figma files included?",
-      answer: (
-        <p className="text-muted-foreground mb-4 max-w-[580px]">
-          Yes! The complete Launch UI template is available for free on the{" "}
-          <Link
-            href="https://www.figma.com/community/file/1420131743903900629/launch-ui-landing-page-components-ui-kit"
-            className="text-foreground underline"
-          >
-            Figma community
-          </Link>
-          .
+        <p className="text-muted-foreground mb-4 max-w-[640px]">
+          Most repairs are completed within 1-2 business days. We&apos;ll give you an exact estimate after diagnostics.
         </p>
       ),
     },
     {
-      question: "Can I get a discount?",
+      question: "Do you use original parts?",
       answer: (
-        <>
-          <p className="text-muted-foreground mb-4 max-w-[580px]">
-            Actually, yes! I&apos;m always acively looking for beta testers of
-            new features. If you are interested in exchanging feedback for a
-            discount, please contact me via{" "}
-            <a
-              href={siteConfig.links.email}
-              className="underline underline-offset-2"
-            >
-              email
-            </a>
-            .
-          </p>
-        </>
+        <p className="text-muted-foreground mb-4 max-w-[640px]">
+          We source high-quality original or OEM parts to ensure the best reliability for your device.
+        </p>
+      ),
+    },
+    {
+      question: "Is there any warranty?",
+      answer: (
+        <p className="text-muted-foreground mb-4 max-w-[640px]">
+          Yes, all repairs come with a 90-day warranty covering both parts and labor.
+        </p>
+      ),
+    },
+    {
+      question: "Can you come to my location?",
+      answer: (
+        <p className="text-muted-foreground mb-4 max-w-[640px]">
+          We offer on-site service for business clients and by request for home users.
+        </p>
+      ),
+    },
+    {
+      question: "What if my data is lost?",
+      answer: (
+        <p className="text-muted-foreground mb-4 max-w-[640px]">
+          Our specialists can attempt data recovery from damaged drives. We&apos;ll let you know the chances of success after evaluation.
+        </p>
       ),
     },
   ],

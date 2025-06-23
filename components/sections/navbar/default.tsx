@@ -41,18 +41,18 @@ interface NavbarProps {
 
 export default function Navbar({
   logo = <LaunchUI />,
-  name = "Launch UI",
+  name = siteConfig.name,
   homeUrl = siteConfig.url,
   mobileLinks = [
-    { text: "Getting Started", href: siteConfig.url },
-    { text: "Components", href: siteConfig.url },
-    { text: "Documentation", href: siteConfig.url },
+    { text: "Services", href: siteConfig.url },
+    { text: "Pricing", href: "#pricing" },
+    { text: "Contact", href: siteConfig.getStartedUrl },
   ],
   actions = [
-    { text: "Sign in", href: siteConfig.url, isButton: false },
+    { text: "Call us", href: siteConfig.getStartedUrl, isButton: false },
     {
-      text: "Get Started",
-      href: siteConfig.url,
+      text: "Request Service",
+      href: siteConfig.getStartedUrl,
       isButton: true,
       variant: "default",
     },
