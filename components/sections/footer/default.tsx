@@ -34,33 +34,31 @@ interface FooterProps {
 
 export default function FooterSection({
   logo = <LaunchUI />,
-  name = "Launch UI",
+  name = "TechFix Repairs",
   columns = [
     {
-      title: "Product",
+      title: "Services",
       links: [
-        { text: "Changelog", href: siteConfig.url },
-        { text: "Documentation", href: siteConfig.url },
+        { text: "Diagnostics", href: siteConfig.url },
+        { text: "Virus Removal", href: siteConfig.url },
       ],
     },
     {
       title: "Company",
       links: [
         { text: "About", href: siteConfig.url },
-        { text: "Careers", href: siteConfig.url },
         { text: "Blog", href: siteConfig.url },
       ],
     },
     {
       title: "Contact",
       links: [
-        { text: "Discord", href: siteConfig.url },
-        { text: "Twitter", href: siteConfig.url },
-        { text: "Github", href: siteConfig.links.github },
+        { text: "Email", href: siteConfig.links.email },
+        { text: "Twitter", href: siteConfig.links.twitter },
       ],
     },
   ],
-  copyright = "© 2025 Mikołaj Dobrucki. All rights reserved",
+  copyright = "© 2025 TechFix Repairs. All rights reserved",
   policies = [
     { text: "Privacy Policy", href: siteConfig.url },
     { text: "Terms of Service", href: siteConfig.url },
